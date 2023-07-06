@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    
+    <!-- enlace a fuente externa -->
+    <style>
+        @font-face {
+            font-family: "lato";
+            src: url(fonts/Lato-Regular.ttf) format (ttf);
+        }
+    </style>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    
+    <!-- enlace a css -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>contacto</title>
+</head>
+<body>
+    <header>
+       <div>
+            <img src="../img/logo.jpg" alt="" id="logo"></div><br>
+       <nav class="barra">
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="2_ofertas.html">ofertas</a></li>
+                <li><a href="3_novedades.html">novedades</a></li>
+                <li><a href="4_stock.html">stock</a></li>
+                <li><a href="5_contacto.html">contacto</a></li>
+               
+            </ul>
+       </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <h1>Natura Ciudad de Nieva</h1>
+        </section>     
+        <section class="contacto">
+            <form action="enviar.php" method="post" enctype="text/plain">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+                <label for="">Apellido</label>
+                <input type="text"><br>
+                <label for="">Correo</label>
+                <input type="email">
+                <label for="">Telefono</label>
+                <input type="number"><br>
+                <label for="comentarios">Comentarios</label><br>
+                <textarea name="comentarios" id="comentarios" cols="60" rows="10"></textarea><br>
+                <input type="submit">     
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos son reservados por copyright</p>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100063500891206"><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-solid fa-location-dot"></i></a>
+            <a href=""><i class="fa-solid fa-truck-fast"></i></a>
+        </div>
+    </footer>
+    <a href="#" class="subir">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+</body>
+</html>

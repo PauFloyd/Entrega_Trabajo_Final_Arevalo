@@ -1,0 +1,228 @@
+/*fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+/*propiedades a todo el documento*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #ffe5d4;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
+
+}
+
+
+/*header*/
+header{
+    height: 150px;
+    width: 100%;
+    background-color: #68A691;
+    font-family: "cookie";
+    text-transform: capitalize;
+    font-size: 35px;
+    grid-area: header;
+    
+}
+/*logo*/
+#logo{
+    float: left;
+    height: 140px;
+    padding: 15px;
+}
+/*menu*/
+.barra{
+    float: right;
+}
+
+.barra ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    padding-top: 70px
+}
+
+.barra a{
+    text-decoration: none;
+    color: #EFC7C2;
+    
+}
+
+.barra a:hover{
+    color: aquamarine;
+}
+/*main*/
+main{
+    grid-area: main;
+
+}
+.banner{
+    height: 250px;
+    width: 100%;
+    background-image: url(../img/floresLilas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "lato";
+    font-size: 45px;
+    font-style: italic;
+    padding: 80px;
+    
+}
+
+.banner h1{
+    color: rgb(48, 38, 58);
+    text-align: center;
+    
+}
+
+.banner a:hover{
+    background-color: yellow;
+    border: 2px solid #fff;
+}
+/*secciones*/
+main.sec{
+    height: 700px;
+    width: 100%;
+    
+}
+
+h2{
+    text-align: center;
+    background-color: #BFD3C1;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    padding: 20px;
+    color: #68A691;
+}
+/*video motivo*/
+#motivo{
+    width: 400px;
+    height: auto;
+    padding: 20px;
+        
+}
+/*parrafo del video*/
+.call{
+    color: #694F5D;
+    width: 40%;
+    float: right;
+    background-color: #BFD3C1;
+    border: 3px solid #694F5D;
+    padding: 20px;
+    font-family: "lato";
+    margin: 60px;
+    font-size: 25px;
+}
+/*seccion 1*/
+.sec.sec1{
+    height: 1000px;
+    padding-left: 400px;
+    padding-top: 50px;
+    padding-right: 200px;
+    padding-bottom: 50px;
+    background-color: #fff;
+}
+/*seccion 2*/
+.sec.sec2{
+    height: 1000px;
+    padding-left: 400px;
+    padding-top: 50px;
+    padding-right: 200px;
+    padding-bottom: 50px;
+   background-color: #fff;    
+}
+/*productos*/
+.item{
+    height: 300px;
+    width: 150px;
+    border: 2px solid #694F5D;
+    text-align: center;
+    line-height: 120px;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    
+}
+/*seccion 3*/
+.sec.sec3{
+    padding-left: 300px;
+    padding-top: 50px;
+    padding-right: 200px;
+    padding-bottom: 50px;
+}
+/*pagina novedades*/
+/*seccion 4*/
+.sec.sec4{
+    padding: auto;
+    
+}
+.prod{
+    height: 150px;
+    width: 150px;
+    border: 2px solid #fff;
+    text-align: center;
+    line-height: 120px;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+/*pagina contacto*/
+.contacto{
+    color:  rgb(48, 38, 58);
+    font-weight: bold;
+    height: 1000px;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-family: "lato";
+    font-size: 30px;
+
+}
+/*footer*/
+footer{
+    text-align: center;
+    font-size: 30px;
+    background-color: #694F5D;
+    grid-area: footer;
+
+}
+footer p{
+    margin-bottom: 15px;
+    color: #EFC7C2;
+}
+
+footer div{
+    font-size: 20px;
+    letter-spacing: 20px;
+    color: #EFC7C2;
+}
+/*boton subir*/
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color: #68A691;
+    color: #fff;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 0 0 5px #fff;
+}
