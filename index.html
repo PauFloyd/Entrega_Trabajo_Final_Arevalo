@@ -29,9 +29,59 @@
 <!-- BODY -->
 <body>
     <header>
-       <div>
-            <img src="img/logo.jpg" alt="logo" id="logo"></div><br>
-       <nav class="barra">
+        <div>
+            <img src="img/logo.jpg" alt="logo" id="logo">
+        </div><br>
+        <!-- NAVEGADOR CON BOOTSTRAP -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/2_ofertas.html">Ofertas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/3_novedades.html">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/4_stock.html">Stock</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/5_contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <!-- BOTON DROPDOWN -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Home</a></li>
+                            <li><a class="dropdown-item" href="./pages/2_ofertas.html">Ofertas</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="./pages/3_novedades.html">Novedades</a></li>
+                            <li><a class="dropdown-item" href="./pages/4_stock.html">Stock</a></li>
+                            <li><a class="dropdown-item" href="./pages/5_contacto.html">Contacto</a></li>
+                        </ul>
+                    </li>
+
+                <!-- BUSCADOR -->
+                <!-- <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+              </div>
+            </div>
+          </nav>
+       
+        <!-- NAVEGADOR CON CSS -->
+        <!-- <nav class="barra">
             <ul>
                 <li><a href="#">home</a></li>
                 <li><a href="pages/2_ofertas.html">ofertas</a></li>
@@ -40,7 +90,7 @@
                 <li><a href="pages/5_contacto.html">contacto</a></li>
                
             </ul>
-       </nav>
+       </nav> -->
     </header>
     <main>
         <section class="banner">
@@ -50,17 +100,21 @@
             <video src="video/MOTIVO_5_RP.mp4" id="motivo" controls></video>
             <div class="call">
                 <h3>Título del Video</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit inventore in eligendi vero? Architecto alias velit molestias, voluptatibus voluptatum eveniet!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.!</p>
             </div>
         </section>
         <h2 id="sec2">productos en oferta</h2>
         <section class="sec sec2">
-            <div class="item item1" url="">producto 1</div>
-            <div class="item item2" url="">producto 2</div>
-            <div class="item item3" url="">producto 3</div><br>
-            <div class="item item4" url="">producto 4</div>
-            <div class="item item5" url="">producto 5</div>
-            <div class="item item6" url="">producto 6</div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="item home col-12 col-lg-4" url="">producto 1</div>
+                    <div class="item home col-12 col-lg-4" url="">producto 2</div>
+                    <div class="item home col-12 col-lg-4" url="">producto 3</div>
+                    <div class="item home col-12 col-lg-4" url="">producto 4</div>
+                    <div class="item home col-12 col-lg-4" url="">producto 5</div>
+                    <div class="item home col-12 col-lg-4" url="">producto 6</div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
