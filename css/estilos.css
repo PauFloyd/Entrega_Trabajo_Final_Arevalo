@@ -227,8 +227,4 @@ footer div{
     line-height: 40px;
     box-shadow: 0 0 5px #fff;
 }
-@media (max-width: 400px){
-    .{
-        display: none;
-    }
-}
+
