@@ -15,6 +15,7 @@ html{
 body{
     background-color: #ffe5d4;
     display: grid;
+    grid-template-columns: 3fr;
     grid-template-areas: 
     "header header header"
     "main main main"
@@ -22,7 +23,6 @@ body{
     ;
 
 }
-
 
 /*header*/
 header{
@@ -32,8 +32,7 @@ header{
     font-family: "cookie";
     text-transform: capitalize;
     font-size: 35px;
-    grid-area: header;
-    
+    grid-area: header;    
 }
 /*logo*/
 #logo{
@@ -42,17 +41,22 @@ header{
     padding: 15px;
 }
 /*NAV con BOOTSTRAP*/
+nav.container #navbarSupportedContent #listaDeMenu{
+    display: flex;
+    justify-content: flex-end;
+}
 
-/*NAV CON CSS*/
-/*.barra{
+
+/* NAV CON CSS */
+.barra{ 
     float: right;
+
 }
 
 .barra ul li{
     list-style: none;
     display: inline-block;
-    padding: 15px;
-    padding-top: 70px
+    padding: 10px
 }
 
 .barra a{
@@ -110,6 +114,22 @@ h2{
     padding: 20px;
     color: #68A691;
 }
+
+/*seccion 1*/
+
+.sec.sec1,
+.sec.sec4,
+.sec.sec5,
+.sec.sec6{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+    margin: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ffe5d4;    
+}
 /*video motivo*/
 #motivo{
     width: 400px;
@@ -120,49 +140,56 @@ h2{
 /*parrafo del video*/
 .call{
     color: #694F5D;
-    width: 40%;
-    float: right;
     background-color: #BFD3C1;
-    border: 3px solid #694F5D;
     padding: 20px;
     font-family: "lato";
     margin: 60px;
-    font-size: 25px;
-}
-/*seccion 1*/
-.sec.sec1{
-    display: flex;
-    height: 500px;
-    padding-left: 400px;
-    padding-top: 50px;
-    padding-right: 200px;
-    padding-bottom: 50px;
-    background-color: #fff;
+    overflow: auto;
 }
 /*seccion 2*/
 .sec.sec2{
-    height: 1000px;
-    padding-left: 400px;
+    display: flex;
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding-left: 200px;
     padding-top: 50px;
     padding-right: 200px;
     padding-bottom: 50px;
-    background-color: #fff;    
+    background-color: #ffe5d4;    
 }
 /*productos*/
 .item{
-    height: 150px;
     border: 2px solid #694F5D;
     text-align: center;
-    line-height: 120px;
+    font-family: "lato";
     font-size: 20px;
     font-weight: bold;
-    
+    box-shadow: 0 0 20px gray;
+    width: 200px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #f7f0eb; 
 }
+.item img{
+    width: 100%;
+}
+.item .contedido_item{
+    box-shadow: 0 0 20px gray;
+    margin: 10px;
+}
+.item.caja_boton{
+    height: auto;
+    width: auto;
+}
+
 /*seccion 3*/
 .sec.sec3{
-    padding-left: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     padding-top: 50px;
-    padding-right: 200px;
     padding-bottom: 50px;
 }
 /*pagina novedades*/
@@ -181,6 +208,7 @@ h2{
     font-weight: bold;
     display: inline-block;
 }
+
 /*pagina contacto*/
 .contacto{
     color:  rgb(48, 38, 58);
@@ -227,4 +255,25 @@ footer div{
     line-height: 40px;
     box-shadow: 0 0 5px #fff;
 }
+@media (max-width: 700px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    }
+    
+    .sec.sec1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2,1fr;
+        justify-items: center;
+    }
+}
+@media (min-width: 700px){
+    .navbar{
+        display: none;
+    }
 
+}
