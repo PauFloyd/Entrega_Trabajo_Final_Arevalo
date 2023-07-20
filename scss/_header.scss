@@ -1,0 +1,41 @@
+/*header*/
+header{
+    height: 150px;
+    width: 100%;
+    background-color: map-get($colores, verde-oscuro);
+    font-family: "cookie";
+    text-transform: capitalize;
+    font-size: 35px;
+    grid-area: header;
+    /*logo*/
+    #logo{
+        float: left;
+        height: 140px;
+        padding: 15px;
+        transition: heigth 2s;
+            &hover{
+                height: 180px;
+            }
+    }    
+    /*NAV con BOOTSTRAP*/
+    nav.container #navbarSupportedContent #listaDeMenu{
+        display: flex;
+        justify-content: flex-end;
+    }
+    /* NAV CON CSS */
+    .barra{ 
+        float: right;
+        ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 10px
+        }
+        a{
+            text-decoration: none;
+            color: map-get($colores, melocoton-medio);
+            &:hover{
+                color: aquamarine;
+            }
+        }
+    }
+}

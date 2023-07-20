@@ -1,0 +1,19 @@
+/*boton subir*/
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color: map-get($colores, verde-oscuro);
+    color: map-get($colores, hueso);
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 0 0 5px map-get($colores, hueso);
+    transition: height width;
+}
+.subir:hover{
+    height: 50px;
+    width: 50px;
+}

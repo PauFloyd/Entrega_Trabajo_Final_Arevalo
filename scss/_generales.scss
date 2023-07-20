@@ -1,0 +1,21 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: map-get($colores, naranja_claro);
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
+}
